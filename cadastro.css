@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body {
+    background: #fff;
+    color: #333;
+}
+
+header #logo{
+    width: 200px;
+    height: px;
+    margin-right: 1180px;
+
+}
+header #logo_carrinho{
+    width: 40px;
+    height: 50;  
+}
+li, a {
+    font-family: monospace;
+    font-weight: 500;
+    font-size: px;
+    color: #edf0f1;
+}
+header nav a {
+    text-align: center;
+    font-size: 25px;
+    margin-left: 80px;
+    color: white;
+    text-decoration: none;
+}
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px;
+    background: #f8aeca;
+    height: 50px;
+}
+.navlinks {
+    display: flex;
+    list-style: none;
+    margin-left: -150px;
+    
+
+}
+.navlinks li a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0px 0px;
+    margin-left: 10px;
+}
+.navlinks li a:hover {
+    color: #EB42A6;
+} 
+nav ul{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+h2{
+    font-family: monospace;
+    text-align: center;
+    margin: 30px;
+    font-size: 40px;
+    padding: 15px;
+}
+form{
+    padding: 15px;
+}
+form input{
+    border-width: 3px;
+    border-style: solid;
+    border-color: hsl(337, 84%, 83%); 
+    border-radius: 10px;
+    width: 600px;
+    height: 40px;
+    margin-left: 30%;
+}
+form label{
+    font-size: 25px;
+    margin-left: 30%;
+}
+button{
+    margin: 20px;
+    font-size: 25px;
+    padding: 10px;
+    background: #a94b82;
+    color: white;
+    margin-left: 46%; 
+    border-radius: 10px;
+    border: none;
+    cursor: pointer; 
+    transition: all 0.3s ease;
+}
+button:hover {
+    background: #d46ba0;
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+.direcionamento{
+    text-align: center;
+    font-size: 15px;
+    text-decoration: none;
+}
+#foto{
+    position: absolute;
+    bottom: -0px;
+    right: -0px;
+    width: 400px;
+}
+.direcionamento a{
+    color: #a94b82;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+
+.direcionamento a:hover {
+    color: #d46ba0;
+    text-decoration: underline;
+}
+
+.direcionamento:active {
+    color: #7a2d58;
+}

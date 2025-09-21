@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Home</title>
+        <link href="home.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <header>
+            <img id="logo" src="imagens/Design sem nome (2).png" alt="vovo palmirinha">
+            <nav>
+                <ul class="navlinks">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="carrinho.html" target="_blank"><img id="logo_carrinho" src="imagens/carrinho.png" alt="carrinho"></a></li>
+            </nav>
+        </header>
+        <div class="carrossel">
+            <div class="slides">
+                <img src="imagens/Receitapalmirinha.jpg" alt="salgadinho">
+                <img src="imagens/torta-de-frango-3.jpg" alt="salgadinho">
+                <img src="imagens/coxinha.jpg" alt="salgadinho">
+                <img src="imagens/risoledepalmito.jpg" alt="bolo de natal">
+            </div>
+            <div class="espaco">
+                <span></span><span></span><span></span><span></span>
+            </div>
+            <button class="prev" onclick="mudarSlide(-1)">&#10095;</button>
+            <button class="next" onclick="mudarSlide(1)">&#10095;</button>
+        </div>
+        <div class="mini-carrossel" id="carrosselmini">
+            <div class="fotos" id="carousel">
+                <img src="imagens/sonho.jpg" alt="">
+                <img src="imagens/pudim.jpg" alt="">
+                <img src="imagens/macadoamor.jpg" alt="">
+                <img src="imagens/browniedecafe.jpeg" alt="">
+                <img src="imagens/bolinhodechuva.jpg" alt="">
+                <img src="imagens/arroz-doce.jpg" alt="">
+                <img src="imagens/brigadeirao.jpg" alt="">
+            </div>
+        </div>
+        <section class="sobre">
+            <img src="imagens/palmirinhaeamigo.jpg" alt="Palmirinha">
+            <p>
+                Vovó Palmirinha foi uma apresentadora e culinarista brasileira muito querida pelo público.
+                Sua trajetória é marcada pela superação de dificuldades pessoais e pelo sucesso conquistado
+                na televisão, onde se tornou um verdadeiro ícone da culinária caseira.
+                Palmirinha deixou como legado não apenas suas receitas, mas também sua doçura,
+                generosidade e a lembrança de que cozinhar é um ato de amor.
+            </p>
+        </section>
+        <footer>
+        <div class="redes_sociais">
+            <a href="https://www.instagram.com/" target="_blank"><img src="imagens/instagram.png"></a>
+            <a href="https://www.telefone.com/" target="_blank"><img src="imagens/telefone.png"></a>
+            <a href="https://www.localizacao.com/" target="_blank"><img src="imagens/localização.png"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="imagens/facebook.png"></a>
+        </div>
+        <p>©Vovó Palmirinha 2005 - 2025</p>
+        </footer>
+        <script>
+            let slideIndex = 0;
+          
+            function mostrarSlide() {
+              const slides = document.querySelector(".slides");
+              const totalSlides = slides.children.length;
+          
+              slides.style.transform = `translateX(${-slideIndex * 100}%)`;
+            }
+          
+            function mudarSlide(n) {
+              const slides = document.querySelector(".slides");
+              const totalSlides = slides.children.length;
+          
+              slideIndex = (slideIndex + n + totalSlides) % totalSlides;
+              mostrarSlide();
+            }
+            mostrarSlide();
+        </script>
+        
+    </body>
+</html>

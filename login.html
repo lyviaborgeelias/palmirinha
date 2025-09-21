@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Login</title>
+        <link href="login.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="imagens/Design sem nome (2).png" alt="vovo palmirinha">
+            <nav>
+                <ul class="navlinks">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="carrinho.html" target="_blank"><img id="logo_carrinho" src="imagens/carrinho.png" alt="carrinho"></a></li>
+            </nav>
+        </header>
+        <main>
+            <h2>Login</h2>
+            <form method="post">
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email" name="email" required><br>
+    
+                <label for="senha">Senha:</label><br>
+                <input type="password" id="senha" name="senha" required><br>
+    
+                <button onclick="finalizarCompra()">Entrar</button>
+            </form>
+            <div class="direcionamento">
+                <p>Não tem uma conta? <a href="cadastro.html">Fazer cadastro</a></p>
+            </div>
+            <img id="foto" src="imagens/logo_palmirinha.png" alt="">
+        </main>
+        
+        <script>
+            document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = document.getElementById('email').value;
+            const senha = document.getElementById('senha').value;
+
+            if (email && senha) {
+                alert('Tentando entrar com o e-mail: ' + email);
+                // Aqui você pode adicionar lógica para enviar os dados ao servidor
+            } else {
+                alert('Por favor, preencha todos os campos.');
+            }
+            });
+        </script>
+    </body>
+</html>
