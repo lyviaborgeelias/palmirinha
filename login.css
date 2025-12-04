@@ -63,71 +63,82 @@ nav ul{
     gap: 30px;
     align-items: center;
 }
-h2{
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px;
+}
+
+h2 {
     font-family: monospace;
     text-align: center;
-    margin: 30px;
+    margin: 30px 0;
     font-size: 40px;
-    padding: 15px;
 }
-form{
-    padding: 15px;
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-form input{
+
+form label {
+    font-size: 25px;
+    align-self: flex-start;
+}
+
+form input {
     border-width: 3px;
     border-style: solid;
-    border-color: hsl(337, 84%, 83%); 
+    border-color: hsl(337, 84%, 83%);
     border-radius: 10px;
     width: 600px;
     height: 40px;
-    margin-left: 30%;
 }
-form label{
+
+button {
     font-size: 25px;
-    margin-left: 30%;
-}
-button{
-    margin: 20px;
-    font-size: 25px;
-    padding: 10px;
-    margin-left: 46%;
+    padding: 10px 40px;
     border-radius: 10px;
     background: #a94b82;
     color: white;
     border: none;
-    cursor: pointer; 
+    cursor: pointer;
     transition: all 0.3s ease;
+    align-self: center;
 }
+
 button:hover {
     background: #d46ba0;
     transform: scale(1.05);
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
-.direcionamento{
+
+.direcionamento {
+    padding: 20px;
     text-align: center;
     font-size: 15px;
-    text-decoration: none;
 }
-#foto{
-    position: absolute;
-    bottom: -0px;
-    right: -0px;
-    width: 400px;
-}
-.direcionamento a{
+
+.direcionamento a {
     color: #a94b82;
     text-decoration: none;
     font-weight: bold;
     transition: all 0.3s ease;
-  }
+}
 
 .direcionamento a:hover {
     color: #d46ba0;
     text-decoration: underline;
 }
 
-.direcionamento:active {
-    color: #7a2d58;
+#foto {
+    margin-top: 20px;
+    position: absolute;
+    bottom: -0px;
+    right: -0px;
+    width: 400px;
 }
-
 
